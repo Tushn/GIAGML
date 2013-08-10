@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+[cc lang="css"]
+@font-face {
+	font-family: "Amerika Sans";
+	url('./fontes/AMERSN_.ttf') format('truetype');
+	
+	font-family: "Xirod";
+	url('fontes/xirod.ttf') format('truetype');
+}
+[/cc]
+/*referencia de fonte: http://tableless.com.br/font-face-fonts-externas-na-web/ */
+
+body{
+	background-color:#9ab; /*fundo*/
+	cursor: auto;
+	//cursor: not-allowed;
+	//cursor: url("http://lh3.ggpht.com/-NPUuZ-3aX1s/SbTLv4Fj6tI/AAAAAAAAHm8/b9w4VhU9VMo/s128/Mosca.jpg"), url("http://lh3.ggpht.com/-NPUuZ-3aX1s/SbTLv4Fj6tI/AAAAAAAAHm8/b9w4VhU9VMo/s128/Mosca.jpg"), auto;
+	//cursor: url("./imagens/objetos/001-Weapon01.png"), url("./imagens/objetos/001-Weapon01.png"), auto;
+}
+
+p{
+	text-align:justify;
+}
+
+dl{
+	text-align:justify;
+	padding:10% 40% 5% 40%;
+	border:4px solid #c2e1ef;
+	/*background-color:#8cc;*/
+	
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px 10px 10px 10px;
+}
+
+dl:hover{
+	background-color:#aaa;
+	padding:10% 40% 5% 40%;
+}
+
+dl:active{
+	background-color:#eee;
+	//cursor: help;
+}
+
+.titulo{
+	clear:both;
+	/*margin-top:1%;*/
+	margin-bottom:1%;
+	width:99%;
+	text-align:center;
+	background-color:#cde;
+	font-family:"Amerika Sans";/*url('AMERSN_.ttf');*/
+	border-radius: 10px; /* CSS 3 */
+	-o-border-radius: 10px; /* Opera */
+	-icab-border-radius: 10px; /* iCab */
+	-khtml-border-radius: 10px; /* Konqueror */
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px 10px 10px 10px;
+}
+
+.corpo{
+	float:left;
+	width:65%;
+	min-height:400px;
+	padding:10px;
+	background-color:#cde;
+	text-align:center;
+	border-radius: 10px; /* CSS 3 */
+	-o-border-radius: 10px; /* Opera */
+	-icab-border-radius: 10px; /* iCab */
+	-khtml-border-radius: 10px; /* Konqueror */
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px 10px 10px 10px;
+}
+
+.jogo{
+	float:left;
+	width:60%;
+	min-height:300px;
+	padding:10px;
+	background-color:#cde;/*24;*/
+	text-align:center;
+	border-radius: 10px; /* CSS 3 */
+	-o-border-radius: 10px; /* Opera */
+	-icab-border-radius: 10px; /* iCab */
+	-khtml-border-radius: 10px; /* Konqueror */
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px 10px 10px 10px;
+}
+
+.saida{
+	text-align:center;
+	clear:both;
+	background-color:#8ab/*#cdc*/;
+	min-height:96px;
+	width:95%;
+	border-radius: 10px; /* CSS 3 */
+	-o-border-radius: 10px; /* Opera */
+	-icab-border-radius: 10px; /* iCab */
+	-khtml-border-radius: 10px; /* Konqueror */
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px 10px 10px 10px;
+}
+
+.col{
+	/*float:left;*/
+	min-height:400px;
+	width:29%;
+	margin-left:68%;
+	padding:10px;
+	background-color:#cde;
+	border-radius: 10px; /* CSS 3 */
+	-o-border-radius: 10px; /* Opera */
+	-icab-border-radius: 10px; /* iCab */
+	-khtml-border-radius: 10px; /* Konqueror */
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px 10px 10px 10px;
+}
+
+.itens_lista{
+	height:40px;
+	width:40px;
+	border:10px;
+	border-style:;
+}
+
+.rodape{
+	clear:both;
+	border-radius: 10px; /* CSS 3 */
+	-o-border-radius: 10px; /* Opera */
+	-icab-border-radius: 10px; /* iCab */
+	-khtml-border-radius: 10px; /* Konqueror */
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px 10px 10px 10px;
+}
+
+.gQ_sprite:hover{
+	background-color:rgba(256,256,256,0.3);
+	/*background-color:#acf;
+	opacity:0.5;
+	-moz-opacity: 0.5;
+	filter: alpha(opacity=5);*/
+}
+
+#face{
+	float: left;
+}
+
+#texto{
+	float: left;
+	padding: 10px;
+	text-align: center;
+	background-color:#8ab;
+	//overflow:scroll;
+	display:block;
+	width:80%;
+	//position:relative;
+}
+
+/*Botão para iniciar o jogo*/
+#iniciar{
+	
+}
+
+#playground{
+	clear:both;
+}
+
+#camada{
+	-webkit-background-size:400px 200px;
+	-moz-background-size:400px 200px; /* Old Firefox */
+	background-size:100% 100%;
+}
+
+#proxima_fala{
+	margin-top:10%;
+	margin-left:22%;
+	padding:4px;
+	float:left;
+	text-align:top;
+	background-color:#ccc;
+	border-radius: 5px; /* CSS 3 */
+	-o-border-radius: 5px; /* Opera */
+	-icab-border-radius: 5px; /* iCab */
+	-khtml-border-radius: 5px; /* Konqueror */
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px 5px 5px 5px;
+}
+
+#proxima_fala:hover{
+	background-color:#aaa;
+}
+
+#proxima_fala:active{
+	background-color:#6ac;
+}

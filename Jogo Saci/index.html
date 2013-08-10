@@ -1,0 +1,50 @@
+<!--DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"-->
+<!DOCTYPE>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="javascript/bibliotecas/jquery.js"></script>
+		<script type = "text/javascript" src="javascript/bibliotecas/jquery.gamequery-0.7.0.js"></script>
+		<script type = "text/javascript" src="javascript/objeto.js"></script>
+		<script type = "text/javascript" src="javascript/etc.js"></script>
+		<script type = "text/javascript" src="javascript/etc2.js"></script>
+        <!--script type = "text/javascript" src="javascript/evento.js"></script-->
+        <script type = "text/javascript" src="javascript/tela.js"></script>
+		<script type = "text/javascript" src="javascript/orientacoes.js"></script>
+		<script type = "text/javascript" src="javascript/inicializar.js"></script>
+		<link rel="stylesheet" type="text/css" href="oficina_ead.css" media="screen"/>	
+	</head>
+	<body>
+		<div class="titulo"><h1>GIAGML - GIA Game Markup Language</h1></div>
+		<div class="corpo">
+			<div class="jogo">	
+				<div id="playground">
+					<div id="iniciar"><img id="img_t" src="imagens\giaML.png"/></div>
+				</div>
+			</div>
+			<div class="saida">
+				<div id="face" style="width:96px; height:96px; "></div>
+				<div id="texto"></div>
+				<script>
+					/*var divAnime=document.getElementById('face');
+					divAnime.style.backgroundPosition="-96px" + " 96px";
+					*/
+					$("#img_t").width($(".corpo").width());
+					$("#texto").html(texto);
+				</script>
+			</div>
+		</div>
+		<div class="col">
+				<dt id="item0">
+					
+					<!--
+						-- Inventário do jogador
+					-->
+				</dt>
+		</div>
+		<div class="rodape">
+			
+		</div>
+	</body>
+</html>

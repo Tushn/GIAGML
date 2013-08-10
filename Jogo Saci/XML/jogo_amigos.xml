@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<jogo>
+	<titulo>Capture o Saci</titulo>
+	<tela>
+		<nome>Inicial</nome>
+		<fundo>titulo.png</fundo>
+	</tela>
+	<tela id="0">
+		<nome>Quarto</nome>
+		<id>0</id>
+		<fundo>CenarioQuarto.png</fundo>
+		<obj id="0">
+			<url>Caixa.png</url>
+			<nome>Caixa</nome>
+			<tipo>1</tipo>
+			<subtipo>1</subtipo>
+			<x>-59</x>
+			<y>136</y>
+			<largura>550</largura>
+			<altura>428</altura>
+			<fim>obj</fim>
+			<efeito id="0">
+				<scale>0.13</scale>
+			</efeito>
+		</obj>
+		<obj id="1">
+			<url>Cama.png</url>
+			<nome>Cama</nome>
+			<tipo>1</tipo>
+			<subtipo>1</subtipo>
+			<x>85</x>
+			<y>-105</y>
+			<largura>806</largura>
+			<altura>896</altura>
+			<fim>obj</fim>
+			<efeito id="0">
+				<scale>0.17</scale>
+				<fim>efeito</fim>
+			</efeito>
+		</obj>
+		<obj id="2">
+			<url>Papel.png</url>
+			<nome>Papel</nome>
+			<tipo>1</tipo>
+			<subtipo>2</subtipo>
+			<x>-520</x>
+			<y>-210</y>
+			<largura>1500</largura>
+			<altura>1100</altura>
+			<fim>obj</fim>
+			<efeito id="0">
+				<scale>0.03</scale>
+				<rotate>45</rotate>
+				<!--fim>efeito</fim-->
+			</efeito>
+		</obj>
+		<obj id="3">
+			<url>Nada</url>
+			<nome>AvancarSala</nome>
+			<tipo>1</tipo>
+			<subtipo>3</subtipo>
+			<teleporte>1</teleporte>
+			<x>0</x>
+			<y>110</y>
+			<largura>50</largura>
+			<altura>270</altura>
+			<fim>obj</fim>
+		</obj>
+	</tela>
+	<tela id="0">
+		<nome>Sala</nome>
+		<id>1</id>
+		<fundo>CenarioSala.png</fundo>
+		<obj id="0">
+			<url>TioAllTogether.png</url>
+			<nome>TioZe</nome>
+			<tipo>2</tipo>
+			<subtipo>1</subtipo>
+			<x>69</x>
+			<y>42</y>
+			<largura>250</largura>
+			<altura>429</altura>
+			<delta>250</delta>
+			<numframe>4</numframe>
+			<rate>250</rate>
+			<fim>obj</fim>
+			<efeito id="0">
+				<scale>0.38</scale>
+				<fim>efeito</fim>
+			</efeito>
+			<eventos>
+				<evento id="2">
+					<tipo>liberar_chave</tipo>
+					<tipo_condicao>3</tipo_condicao>
+					<senha>Papel</senha>
+					<fim>evento</fim>
+					
+					<chave>Papel</chave>
+					<fim>chave</fim>
+				</evento>
+				<evento id="1">
+					<tipo>fala</tipo>
+					<tipo_condicao>4</tipo_condicao>
+					<senha>Papel</senha>
+					<duracao>permanente</duracao>
+					<fim>evento</fim>
+					<fala id="0">
+						<id_foto>5</id_foto>
+						<nome_foto>Tio Ze</nome_foto>
+						<texto>Que é isso fi?</texto>
+						<tipo_fala>1</tipo_fala>
+						<url>Saci.png</url>
+						
+						<id_foto>5</id_foto>
+						<nome_foto>Tio Ze</nome_foto>
+						<texto>Hmm, notável. Esse era o Saci mesmo. É díficil de vê-lo porque normalmente ele aparece como um tornado.</texto>
+						<tipo_fala>1</tipo_fala>
+						<url>Saci.png</url>
+						
+						<id_foto>5</id_foto>
+						<nome_foto>Tio Ze</nome_foto>
+						<texto>O diabinho, gosta de fumo. Para atrái-lo você precisar de um pouco de fumo. Procure uma peneira e use-a para atravessar o tornado do Saci. Depois remova seu gorro aponte uma garrafa vazia para o diabinho.</texto>
+						<tipo_fala>1</tipo_fala>
+						<url>Saci.png</url>
+						
+						<id_foto>5</id_foto>
+						<nome_foto>Tio Ze</nome_foto>
+						<texto>Aí, você terá o Saci dentro da garrafa. Traga-a para mim se conseguir pegá-lo.</texto>
+						<tipo_fala>1</tipo_fala>
+						<url>Saci.png</url>
+						
+						<fim>fala</fim>
+					</fala>
+				</evento>
+				<evento id="0">
+					<tipo>receber</tipo>
+					<tipo_condicao>4</tipo_condicao>
+					<senha>Papel</senha>
+					<duracao>permanente</duracao>
+					<nome_condicao>Fumo</nome_condicao>
+					<fim>evento</fim>
+					<item id="0">
+						<url>Fumo.png</url>
+						<nome>Fumo</nome>
+						<fim>item</fim>
+					</item>
+				</evento>
+				<evento id="2">
+					<tipo>fala</tipo>
+					<tipo_condicao>5</tipo_condicao>
+					<senha>SaciBorn</senha>
+					<nome_condicao>Liberando a Mesa</nome_condicao>
+					<fala id="0">
+						<id_foto>5</id_foto>
+						<nome_foto>Tio Ze</nome_foto>
+						<texto>Oia ê!!</texto>
+						<tipo_fala>1</tipo_fala>
+						<url>Saci.png</url>
+						
+						<fim>fala</fim>
+					</fala>
+				</evento>
+				<fim>eventos</fim>
+			</eventos>
+				
+		</obj>
+		
+		<obj id="1">
+			<url>Nada</url>
+			<nome>AvancarQuarto</nome>
+			<tipo>1</tipo>
+			<subtipo>3</subtipo>
+			<teleporte>0</teleporte>
+			<x>30</x>
+			<y>110</y>
+			<largura>60</largura>
+			<altura>270</altura>
+			<fim>obj</fim>
+		</obj>
+		
+		<obj id="2">
+			<url>Nada</url>
+			<nome>AvancarCozinha</nome>
+			<tipo>1</tipo>
+			<subtipo>3</subtipo>
+			<teleporte>2</teleporte>
+			<x>530</x>
+			<y>110</y>
+			<largura>80</largura>
+			<altura>250</altura>
+			<fim>obj</fim>
+		</obj>
+		<obj id="3">
+			<url>Nada</url>
+			<nome>AvancarQuintal</nome>
+			<tipo>1</tipo>
+			<subtipo>3</subtipo>
+			<teleporte>3</teleporte>
+			<x>360</x>
+			<y>50</y>
+			<largura>100</largura>
+			<altura>140</altura>
+			<fim>obj</fim>
+		</obj>
+				
+		<obj id="4">
+			<url>Nada</url>
+			<nome>Mesa</nome>
+			<tipo>1</tipo>
+			<subtipo>1</subtipo>
+			<visivel>false</visivel>
+			<x>201</x>
+			<y>155</y>
+			<largura>292</largura>
+			<altura>89</altura>
+			<fim>obj</fim>
+			<eventos>
+				<evento id="0">
+					<tipo>fala</tipo>
+					<tipo_condicao>4</tipo_condicao>
+					<senha>GarrafaComSaci</senha>
+					<duracao>permanente</duracao>
+					<fim>evento</fim>
+					<fala id="0">
+						
+						<id_foto>5</id_foto>
+						<nome_foto>Tio Ze</nome_foto>
+						<texto>Incrível o saci.</texto>
+						<tipo_fala>1</tipo_fala>
+						<url>Saci.png</url>
+						
+						<id_foto>7</id_foto>
+						<nome_foto>Saci</nome_foto>
+						<texto>Darei o ouro que desejarem, basta que me deixem sair daqui. Prometo não importuná-los mais.</texto>
+						<tipo_fala>1</tipo_fala>
+						<url>Saci.png</url>
+						
+						<id_foto>6</id_foto>
+						<nome_foto>Tio Ze</nome_foto>
+						<texto>Feito.</texto>
+						<tipo_fala>1</tipo_fala>
+						<url>Saci.png</url>
+						<fim>fala</fim>
+					</fala>
+					<fim>evento</fim>
+				</evento>
+				
+				<evento id="1">
+					<tipo>liberar_objeto</tipo>
+					<tipo_condicao>5</tipo_condicao>
+					<senha>SaciBorn</senha>
+					<nome_condicao>Liberando a Mesa</nome_condicao>
+					<duracao>permanente</duracao>
+					<fim>evento</fim>
+				</evento>
+
+				<evento id="2">
+					<tipo>receber</tipo>
+					<tipo_condicao>4</tipo_condicao>
+					<senha>GarrafaComSaci</senha>
+					<duracao>permanente</duracao>
+					<nome_condicao>Prender o saci</nome_condicao>
+					<fim>evento</fim>
+					<item id="0">
+						<url>Ouro.png</url>
+						<nome>Ouro</nome>
+						<fim>item</fim>
+					</item>
+				</evento>
+				
+				<fim>eventos</fim>
+			</eventos>
+		</obj>
+		
+	</tela>
+
+	<tela id="2">
+		<nome>Cozinha</nome>
+		<id>2</id>
+		<fundo>CenarioCozinha.png</fundo>
+		<obj id="0">
+			<url>Nada</url>
+			<nome>VoltarSala</nome>
+			<tipo>1</tipo>
+			<subtipo>3</subtipo>
+			<teleporte>1</teleporte>
+			<x>0</x>
+			<y>350</y>
+			<largura>600</largura>
+			<altura>90</altura>
+			<fim>obj</fim>
+		</obj>
+		<obj id="1">
+			<url>Garrafa.png</url>
+			<nome>Garrafa</nome>
+			<tipo>1</tipo>
+			<subtipo>2</subtipo>
+			<x>295</x>
+			<y>-295</y>
+			<largura>282</largura>
+			<altura>828</altura>
+			<fim>obj</fim>
+			<efeito id="0">
+				<scale>0.08</scale>
+				<fim>efeito</fim>
+			</efeito>
+		</obj>
+		<obj id="1">
+			<url>Peneira.png</url>
+			<nome>Peneira</nome>
+			<tipo>1</tipo>
+			<subtipo>2</subtipo>
+			<x>86</x>
+			<y>35</y>
+			<largura>609</largura>
+			<altura>548</altura>
+			<fim>obj</fim>
+			<efeito id="0">
+				<scale>0.08</scale>
+				<fim>efeito</fim>
+			</efeito>
+		</obj>
+		
+	</tela>
+
+	<tela id="3">
+		<nome>CenarioQuintal</nome>
+		<id>3</id>
+		<fundo>CenarioQuintal.png</fundo>
+		<obj id="0">
+			<url>Matinho.png</url>
+			<nome>Matinho</nome>
+			<tipo>2</tipo>
+			<subtipo>1</subtipo>
+			<x>160</x>
+			<y>70</y>
+			<largura>640</largura>
+			<altura>319</altura>
+			<fim>obj</fim>
+			<efeito>
+				<scale>0.26</scale>
+				<fim>efeito</fim>
+			</efeito>
+			<eventos>
+				<evento id="0">
+					<tipo>liberar_chave</tipo>
+					<tipo_condicao>4</tipo_condicao>
+					<senha>Fumo</senha>
+					<fim>evento</fim>
+					
+					<chave>TornadoBorn</chave>
+					<fim>chave</fim>
+				</evento>
+				<fim>eventos</fim>
+			</eventos>
+		</obj>
+		<obj id="1">
+			<url>TornadoAllTogheter.png</url>
+			<nome>Tornado</nome>
+			<tipo>2</tipo>
+			<subtipo>1</subtipo>
+			<visivel>false</visivel>
+			<x>240</x>
+			<y>90</y>
+			<largura>255.25</largura>
+			<altura>285</altura>
+			<delta>255.25</delta>
+			<numframe>4</numframe>
+			<rate>95</rate>
+			<fim>obj</fim>
+			<efeito id="0">
+				<scale>0.7</scale>
+				<fim>efeito</fim>
+			</efeito>
+			<eventos>
+				<evento id="0">
+					<tipo>liberar_objeto</tipo>
+					<tipo_condicao>5</tipo_condicao>
+					<senha>TornadoBorn</senha>
+					<nome_condicao>Tornado nasce</nome_condicao>
+					<duracao>permanente</duracao>
+					<fim>evento</fim>
+				</evento>
+
+				<evento id="1">
+					<tipo>liberar_chave</tipo>
+					<tipo_condicao>4</tipo_condicao>
+					<senha>Peneira</senha>
+					<nome_condicao>Usar Peneira</nome_condicao>
+					<fim>evento</fim>
+					
+					<chave>SaciBorn</chave>
+					<fim>chave</fim>
+				</evento>
+				<evento id="1">
+					<tipo>efeito</tipo>
+					<tipo_condicao>4</tipo_condicao>
+					<senha>Peneira</senha>
+					<nome_condicao>Usar Peneira</nome_condicao>
+					<fim>evento</fim>
+					<efeito id="0">
+						<visivel>false</visivel>
+						<fim>efeito</fim>
+					</efeito>
+				</evento>				
+				<fim>eventos</fim>
+			</eventos>
+		</obj>
+		<obj id="2">
+			<url>SaciSemGorro.png</url>
+			<nome>Saci</nome>
+			<tipo>2</tipo>
+			<subtipo>1</subtipo>
+			<visivel>false</visivel>
+			<x>283</x>
+			<y>-20</y>
+			<largura>308</largura>
+			<altura>564</altura>		
+			<fim>obj</fim>
+			<efeito>
+				<scale>0.33</scale>
+				<fim>efeito</fim>
+			</efeito>
+			<eventos>
+				<evento id="0">
+					<tipo>liberar_objeto</tipo>
+					<tipo_condicao>5</tipo_condicao>
+					<senha>SaciBorn</senha>
+					<nome_condicao>Liberando o Saci</nome_condicao>
+					<duracao>permanente</duracao>
+					<fim>evento</fim>
+				</evento>
+				<evento id="1">
+					<tipo>receber</tipo>
+					<tipo_condicao>4</tipo_condicao>
+					<senha>Garrafa</senha>
+					<duracao>permanente</duracao>
+					<nome_condicao>Prender o saci</nome_condicao>
+					<fim>evento</fim>
+					<item id="0">
+						<url>Garrafa com Saci.png</url>
+						<nome>GarrafaComSaci</nome>
+						<fim>item</fim>
+					</item>
+				</evento>
+				<evento id="2">
+					<tipo>efeito</tipo>
+					<tipo_condicao>4</tipo_condicao>
+					<senha>Garrafa</senha>
+					<nome_condicao>Engarrafando o Saci</nome_condicao>
+					<duracao>permanente</duracao>
+					<fim>evento</fim>
+					<efeito id="0">
+						<visivel>false</visivel>
+						<fim>efeito</fim>
+					</efeito>
+				</evento>
+				
+				<fim>eventos</fim>
+			</eventos>
+		</obj>
+		
+		<obj id="3">
+			<url>Nada</url>
+			<nome>VoltarSala</nome>
+			<tipo>1</tipo>
+			<subtipo>3</subtipo>
+			<teleporte>1</teleporte>
+			<x>0</x>
+			<y>320</y>
+			<largura>500</largura>
+			<altura>90</altura>
+			<fim>obj</fim>
+		</obj>
+			
+	</tela>
+</jogo>

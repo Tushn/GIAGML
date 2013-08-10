@@ -1,0 +1,43 @@
+BUGS:
+- Mais de um evento de fala por objeto
+- Falta corrigir um possível erro no carregamentos de eventos de efeitos (não precisam da tag fim)
+- Proporções na tela
+
+Próximas atualizações:
+- Eventos de onMouseOver
+- Sons
+- Escolha da fonte
+- Temas de fundo para o jogo
+- Desenhos SVD
+- Documentar Código
+- Versão em inglês
+
+- Verificar remoção de chaves globais
+- Implementações das falas:
+	-- Nome do falante.
+	-- Tipo de fala.
+
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------	
+---------------------------------------------------------------------------------------------------
+OUTRAS OBSERVAÇÕES:
+- Procurar ver os paradigmas de programação de linguagens de marcação.
+- No wikipédia em espanhol possui boas referências incluindo: AIML, COLLADA e (não me lembro)
+- Procurar artigos de embasamento
+- Possibilidade de transferir o trabalho para o HTML5
+---------------------------------------------------------------------------------------------------
+ARTIGO:
+- Introdução
+	-- Citar o que são:
+		-> Linguagens de marcação e seu paradigma atual
+		-> Citar os avanços das linguagens de programação
+		-> O que XML, HTML, JavaScript
+		-> GameQuery + JQuery + SoundCreator
+		-> Por fim, GIAGML
+	-- Não esquecer de citar sua contribuição como trabalho, possíveis soluções:
+		-> Mostrar o uso de uma linguagem com o paradigma descritivo (da linguagem de marcação) para construção de jogos
+- Metodologias
+- Aplicação
+- Resultados
+- Conclusão
+
